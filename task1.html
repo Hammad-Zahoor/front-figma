@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Sign_up</title>
+    <style>
+        body {
+            background-color: rgba(233, 248, 229, 1);
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .autumn-amico {
+            width: 500px;
+            height: 500px;
+            top: 240px;
+            left: 180px;
+        }
+
+        .Content {
+            background: rgba(252, 254, 255, 1);
+            border-radius: 25px 0px 0px 25px;
+            max-width: 600px;
+            height: 100vh;
+            top: 0;
+            box-shadow:
+                -6px 0px 12px rgba(0, 0, 0, 0.05),
+                -22px 0px 22px rgba(0, 0, 0, 0.04),
+                50px 0px 30px rgba(0, 0, 0, 0.03),
+                -89px 0px 36px rgba(0, 0, 0, 0.01),
+                -139px 0px 39px rgba(0, 0, 0, 0)
+        }
+
+        .frame-18 {
+            max-width: 400px;
+            height: 83vh;
+            margin: auto;
+            left: 1062px;
+            margin: 0px 70px;
+            gap: 40px;
+            opacity: 0px;
+            margin-top: 74.5px;
+        }
+
+        .frame-17 {
+            max-width: 400.34px;
+            height: 75vh;
+            gap: 30px;
+            opacity: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .frame-2 {
+            width: 297px;
+            height: 27px;
+            gap: 10px;
+            opacity: 0.9px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .already {
+            width: 187px;
+            height: 27px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            text-align: left;
+            color: rgba(74, 74, 74, 1);
+        }
+
+        .login {
+            width: 50px;
+            height: 27px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            text-align: left;
+            color: rgba(115, 137, 93, 1);
+            cursor: pointer;
+            margin-left: -10px;
+        }
+
+        .frame-16 {
+            width: 400.34pxpx;
+            height: 70vh;
+            gap: 30px;
+            opacity: 0px;
+        }
+
+        .frame-15 {
+            width: 222px;
+            height: 50px;
+            gap: 36px;
+            opacity: 0px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .frame-13 {
+            width: 40px;
+            height: 40px;
+            padding: 10px 0px 0px 0px;
+            gap: 10px;
+            border-radius: 220px 220px 220px 220px;
+            opacity: 0px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .frame-13 img {
+            width: 30px;
+            height: 30px;
+            padding: 0px 0.6px 0px 0px;
+            gap: 0px;
+            opacity: 0.9px;
+            align-items: center;
+            margin-left: 5px;
+        }
+
+        .frame-12 {
+            width: 400.34pxpx;
+            height: 63vh;
+            gap: 30px;
+            opacity: 0px;
+        }
+
+        .frame-11 {
+            width: 400.34pxpx;
+            height: 60vh;
+            gap: 50px;
+            opacity: 0px;
+        }
+
+        .or {
+            width: 81px;
+            height: 39px;
+            gap: 0px;
+            opacity: 0px;
+            color: rgba(176, 186, 195, 1);
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 39px;
+            text-align: center;
+            margin: auto;
+            margin-top: 5px;
+        }
+
+        .frame-10 {
+            width: 172px;
+            height: 100px;
+            gap: 0px;
+            opacity: 0px;
+            margin: auto;
+        }
+
+        .frame-10 img {
+            width: 113.97px;
+            height: 39px;
+            gap: 0px;
+            opacity: 0px;
+            margin-left: 20px;
+        }
+
+        .frame-10 p {
+            width: 172px;
+            height: 21px;
+            gap: 0px;
+            opacity: 0.7px;
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 11px;
+            text-align: left;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        .frame-9 {
+            width: 400.34px;
+            height: 45vh;
+            gap: 70px;
+            opacity: 0px;
+        }
+
+        .sign {
+            width: 400px;
+            height: 40px;
+            gap: 0px;
+            border-radius: 30px 20px 30px 20px;
+            opacity: 0px;
+            top: 454.59px;
+            left: 4.17px;
+            background-color: rgba(115, 137, 93, 1);
+            cursor: pointer;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .frame-1 {
+            display: flex;
+            flex-direction: column;
+            height: 35vh;
+            justify-content: space-around;
+        }
+
+        #name {
+            width: 400.34px;
+            height: 40.2px;
+            gap: 0px;
+            border-radius: 20px 0px 0px 0px;
+            opacity: 0px;
+            width: 100%;
+            padding: 10px 35px 10px 10px;
+            /* Adjust padding for the image position */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-image: url('user.png');
+            /* URL of the image */
+            background-size: 20px;
+            /* Adjust size of the image */
+            background-repeat: no-repeat;
+            background-position: 95% center;
+        }
+
+        #email {
+            width: 400.34px;
+            height: 40.2px;
+            gap: 0px;
+            border-radius: 20px 0px 0px 0px;
+            opacity: 0px;
+            width: 100%;
+            padding: 10px 35px 10px 10px;
+            /* Adjust padding for the image position */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-image: url('mail-02.png');
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: 95% center;
+        }
+
+        #password {
+            width: 400.34px;
+            height: 40.2px;
+            gap: 0px;
+            border-radius: 20px 0px 0px 0px;
+            opacity: 0px;
+            width: 100%;
+            padding: 10px 35px 10px 10px;
+            /* Adjust padding for the image position */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-image: url('lock.png');
+            /* URL of the image */
+            background-size: 20px;
+            /* Adjust size of the image */
+            background-repeat: no-repeat;
+            background-position: 95% center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+            }
+
+            .autumn-amico {
+                width: 250px;
+                height: 319px;
+                margin: auto;
+            }
+
+            .Content {
+                background: white;
+                max-width: 600px;
+                height: 100vh;
+                top: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="autumn-amico" src="Autumn-amico-1.png">
+    <div class="Content">
+        <div class="frame-18">
+            <div class="frame-17">
+                <div class="frame-16">
+                    <div class="frame-12">
+                        <div class="frame-11">
+                            <div class="frame-10" id="logo-frame">
+                                <img id="logo" src="Logo.png">
+                                <p>Create Account</p>
+                            </div>
+                            <div class="frame-9">
+                                <div class="frame-1">
+                                    <div class="name">
+                                        <label for="input">Full Name</label>
+                                        <input type="email" id="name" name="name" placeholder="Enter your Full Name">
+                                    </div>
+                                    <div class="input">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter your Email">
+                                    </div>
+                                    <div class="input">
+                                        <label for="email">Password</label>
+                                        <input type="email" id="password" name="passowrd"
+                                            placeholder="Enter your Password">
+                                    </div>
+                                </div>
+                                <button class="sign">Sign-up</button>
+                            </div>
+                        </div>
+                        <p class="or">- OR -</p>
+                    </div>
+                </div>
+                <div class="frame-15">
+                    <div class="frame-13"><img src="google.png"></div>
+                    <div class="frame-13"><img src="facebook.png"></div>
+                    <div class="frame-13"><img src="apple.png"></div>
+                </div>
+            </div>
+            <div class="frame-2">
+                <p class="already">Already have an account?</p>
+                <p class="login">Login</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const frame2_div = document.querySelector('.frame-2');
+        const sign_up_btn = document.querySelector('.sign');
+        frame2_div.addEventListener('click', () => {
+            console.log('Navigate to: "None"');
+            const springAnimation = {
+                mass: 1,
+                stiffness: 100,
+                damping: 15,
+            };
+            console.log('Spring:', springAnimation);
+        });
+        sign_up_btn.addEventListener('click', () => {
+            console.log("Challenge #01 ~ Mobile Version");
+            console.log("Animate instant");
+        });
+        function addLogo() {
+            const logo = document.createElement('img');
+            logo.id = 'logo';
+            logo.src = 'Logo.png';
+            logo.alt = 'Logo';     
+            const container = document.getElementById('logo-frame');
+            if (container instanceof Element) {
+                container.appendChild(logo);
+            } else {
+                console.error('Container element not found or invalid.');
+            }
+        }
+        function handleScreenSizeChange() {
+            const logo = document.querySelector('#logo');
+        
+            if (window.innerWidth <= 600 && logo) { 
+                logo.parentNode.removeChild(logo); 
+            }
+            else{
+               addLogo();
+            }
+        }
+        handleScreenSizeChange();
+        window.addEventListener('resize', handleScreenSizeChange);
+        
+
+
+    </script>
+</body>
+
+</html>
